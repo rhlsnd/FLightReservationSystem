@@ -1,13 +1,13 @@
 package com.FlightReservationSystem;
 
 public class Flight {
-    // Attributes
+    // Attributes for class flight
     private String flightNumber;
     private String airline;
     private int capacity;
     private int bookedSeats;
 
-    // Constructors
+    // Constructors for class flight
     public Flight(String flightNumber, String airline, int capacity, int bookedSeats) {
         this.flightNumber = flightNumber;
         this.airline = airline;
@@ -15,7 +15,7 @@ public class Flight {
         this.bookedSeats = bookedSeats;
     }
 
-    // Methods
+    // Methods for class flight
     public String getFlightNumber() {
         return flightNumber;
     }
@@ -49,16 +49,15 @@ public class Flight {
     }
 
     public String getFlightDetails() {
-        return "Flight No: " + flightNumber + ", Airline: " + airline +
-                ", Capacity: " + capacity + ", Booked Seats: " + bookedSeats;
+        return "Flight No: " + flightNumber + ", Airline: " + airline +", Capacity: " + capacity + ", Booked Seats: " + bookedSeats;
     }
-    // Checks Seat Availability
+    // Checking for seat availibility
 
     public boolean checkAvailability() {
         return bookedSeats < capacity;
     }
-
-    // Updates Available Seats after Booking
+    //available books are updated after checking
+    // 
     public void incrementBookingCounter() {
         bookedSeats++;
     }
