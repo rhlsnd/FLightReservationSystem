@@ -3,14 +3,14 @@ package com.FlightReservationSystem;
 public class Flight {
     // Attributes for class flight
     private String flight_Number;
-    private String airline;
+    private String flightAirline;
     private int capacity;
     private int bookedSeats;
 
     // Constructors for class flight
-    public Flight(String flight_Number, String airline, int capacity, int bookedSeats) {
+    public Flight(String flight_Number, String flightAirline, int capacity, int bookedSeats) {
         this.flightNumber = flightNumber;
-        this.airline = airline;
+        this.flightAirline = flightAirline;
         this.capacity = capacity;
         this.bookedSeats = bookedSeats;
     }
@@ -25,11 +25,11 @@ public class Flight {
     }
 
     public String getAirline() {
-        return airline;
+        return flightAirline;
     }
 
-    public void setAirline(String airline) {
-        this.airline = airline;
+    public void setAirline(String flightAirline) {
+        this.flightAirline = flightAirline;
     }
 
     public int getCapacity() {
@@ -49,7 +49,7 @@ public class Flight {
     }
 
     public String getFlightDetails() {
-        return "Flight No: " + flight_Number + ", Airline: " + airline +", Capacity: " + capacity + ", Booked Seats: " + bookedSeats;
+        return "Flight No: " + flight_Number + ", Airline: " + flightAirline +", Capacity: " + capacity + ", Booked Seats: " + bookedSeats;
     }
     // Checking for seat availibility
 
