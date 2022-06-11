@@ -6,7 +6,6 @@ public class Main {
          System.out.println(ticket.getTo());
          System.out.println(ticket.getPnr());
          System.out.println(ticket.getSeatNo());
-	
     }
 
     public static void main(String[] args) {
