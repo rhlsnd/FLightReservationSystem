@@ -7,9 +7,9 @@ public class Passenger {
     static {
         idCount = 0;
     }
-    git remote add origin
+   
     private int id;
-    git push -u origin main
+   
     //    inner class Address
     private static class Address {
         String streetName, cityName, stateName;
